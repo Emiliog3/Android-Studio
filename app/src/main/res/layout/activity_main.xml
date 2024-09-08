@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Este archivo define el layout para la pantalla de inicio de sesión.
+1. LinearLayout: Organiza los elementos en una sola columna, de arriba hacia abajo.
+   - android:layout_width="match_parent": El ancho del layout ocupará todo el espacio disponible.
+   - android:layout_height="match_parent": La altura del layout ocupará todo el espacio disponible.
+   - android:orientation="vertical": Los elementos se organizan verticalmente.
+   - android:padding="16dp": Añade un margen interno de 16dp alrededor de los elementos para darles espacio.
+
+2. EditText (campo de texto): Un campo de entrada donde el usuario puede escribir texto.
+   - android:id="@+id/username": El ID único que identifica este campo en el código Java.
+   - android:layout_width="match_parent": El campo ocupará todo el ancho disponible.
+   - android:layout_height="wrap_content": La altura se ajusta a su contenido.
+   - android:hint="Username": Texto que aparece cuando el campo está vacío, sugiriendo al usuario qué debe ingresar.
+   - android:inputType="text": El tipo de entrada es texto normal.
+
+3. EditText (campo de texto para la contraseña): Un campo donde el usuario introduce la contraseña.
+   - android:id="@+id/password": El ID único que identifica este campo en el código Java.
+   - android:layout_width="match_parent": El campo ocupará todo el ancho disponible.
+   - android:layout_height="wrap_content": La altura se ajusta a su contenido.
+   - android:hint="Password": Texto que aparece cuando el campo está vacío, sugiriendo al usuario que debe introducir la contraseña.
+   - android:inputType="textPassword": Este tipo de entrada oculta los caracteres para la seguridad de la contraseña.
+
+4. Button (botón para iniciar sesión): Un botón que el usuario presiona para iniciar sesión.
+   - android:id="@+id/login_button": El ID único que identifica el botón en el código Java.
+   - android:layout_width="match_parent": El botón ocupará todo el ancho disponible.
+   - android:layout_height="wrap_content": La altura se ajusta a su contenido.
+   - android:text="Login": Texto que aparece en el botón.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+</LinearLayout>
